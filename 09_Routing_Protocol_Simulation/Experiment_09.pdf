@@ -1,0 +1,231 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 6 /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Italic >>
+endobj
+6 0 obj
+<< /Length 2039 >>
+stream
+0.15 0.15 0.15 rg BT /F2 9 Tf 55 805 Td (CSBB 301) Tj ET
+0.15 0.15 0.15 rg BT /F2 9 Tf 450 805 Td (Computer Networks) Tj ET
+0.5 G 0.5 w 55 795 m 540 795 l S
+0 0 0 rg BT /F2 18 Tf 55 766 Td (EXPERIMENT 9) Tj ET
+0 0 0 rg BT /F2 15 Tf 55 741 Td (Routing Protocol Simulation) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 718 Td (1. AIM AND INTRODUCTION) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 697 Td (Compare static routing and dynamic routing behavior using RIP and OSPF in a small multi-) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 682 Td (router topology.) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 661 Td (This experiment develops practical understanding of routing protocol simulation through a) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 646 Td (controlled network design. The focus is to identify the role of each component, predict how) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 631 Td (traffic should move, configure the required parameters, and interpret verification evidence.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 610 Td (Learning objectives) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 589 Td (By the end of the exercise, the learner should be able to explain the underlying network) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 574 Td (concept, select appropriate devices and addressing, follow a repeatable setup sequence,) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 559 Td (diagnose common faults, and document the limits of a simulated result.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 538 Td (Scope) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 517 Td (The procedures are written for an isolated teaching environment. Device names and interface) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 502 Td (labels may vary with the Packet Tracer version. Use the companion project when available,) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 487 Td (and adapt only after checking the actual topology.) Tj ET
+0.5 G 0.5 w 55 55 m 540 55 l S
+0 0 0 rg BT /F2 10 Tf 135 32 Td (Department of Computer Science and Engineering) Tj ET
+0 0 0 rg BT /F1 9 Tf 460 32 Td (Page 1 of 6) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 2693 >>
+stream
+0.15 0.15 0.15 rg BT /F2 9 Tf 55 805 Td (CSBB 301) Tj ET
+0.15 0.15 0.15 rg BT /F2 9 Tf 450 805 Td (Computer Networks) Tj ET
+0.5 G 0.5 w 55 795 m 540 795 l S
+0 0 0 rg BT /F2 12 Tf 55 766 Td (2. THEORY AND CONCEPTS) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 745 Td (Routing protocols exchange reachability information. RIP is a distance-vector protocol using) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 730 Td (hop count \(maximum 15 usable hops\) and periodic updates. OSPF is a link-state protocol that) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 715 Td (builds a topology database and calculates shortest paths using cost. Static routes are) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 700 Td (manually configured and do not adapt automatically to a failed path. Protocol choices depend) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 685 Td (on scale, convergence, and operational needs.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 664 Td (Operating principles) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 643 Td (Routing Protocol Simulation can be understood by following a communication from its source) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 628 Td (through the relevant interfaces and protocol layers. Each device processes only the) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 613 Td (information needed for its role. Correct operation depends on consistent addressing,) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 598 Td (compatible link settings, correct service configuration, and a return path for replies.) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 577 Td (At the link layer, frames carry local delivery information such as source and destination) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 562 Td (MAC addresses. At the network layer, IP addresses and routing decisions identify the path) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 547 Td (between subnets. Transport and application protocols provide the end-to-end service when) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 532 Td (required. A failure at any layer can prevent the expected application behavior.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 511 Td (Important terms) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 490 Td (Key terms for this lab include routing protocol simulation, interface state, addressing,) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 475 Td (forwarding, and verification. Distinguish configuration state from observed behavior: a) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 460 Td (command being accepted does not by itself prove that end-to-end communication works.) Tj ET
+0.5 G 0.5 w 55 55 m 540 55 l S
+0 0 0 rg BT /F2 10 Tf 135 32 Td (Department of Computer Science and Engineering) Tj ET
+0 0 0 rg BT /F1 9 Tf 460 32 Td (Page 2 of 6) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 2243 >>
+stream
+0.15 0.15 0.15 rg BT /F2 9 Tf 55 805 Td (CSBB 301) Tj ET
+0.15 0.15 0.15 rg BT /F2 9 Tf 450 805 Td (Computer Networks) Tj ET
+0.5 G 0.5 w 55 795 m 540 795 l S
+0 0 0 rg BT /F2 12 Tf 55 766 Td (3. COMPONENTS AND DESIGN) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 745 Td (Requirements: Packet Tracer: three routers in a triangle, one LAN/PC per router; Packet) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 730 Td (Tracer router models with supported IOS commands.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 709 Td (Topology and addressing) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 688 Td (R1-R2 10.0.12.0/30, R2-R3 10.0.23.0/30, R1-R3 10.0.13.0/30; LANs 192.168.1.0/24, .2.0/24,) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 673 Td (.3.0/24. Adapt interface names to selected model.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 652 Td (Logical path) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 631 Td (Source host  ->  access link  ->  switching / service device  ->  destination or gateway  ->) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 616 Td (reply path) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 595 Td (Use a written address plan before configuring devices. Reserve addresses for gateways and) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 580 Td (infrastructure. Ensure that hosts sharing a LAN use compatible masks and unique addresses.) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 565 Td (For routed paths, every router needs a route toward the destination and a usable return) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 550 Td (route.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 529 Td (Design rationale) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 508 Td (A small topology makes it easier to isolate faults. Begin with the minimum number of devices) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 493 Td (needed to demonstrate the concept, then add optional components only after the basic path is) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 478 Td (understood. Label devices and links clearly so that the diagram, configuration, and report) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 463 Td (refer to the same interfaces.) Tj ET
+0.5 G 0.5 w 55 55 m 540 55 l S
+0 0 0 rg BT /F2 10 Tf 135 32 Td (Department of Computer Science and Engineering) Tj ET
+0 0 0 rg BT /F1 9 Tf 460 32 Td (Page 3 of 6) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 2394 >>
+stream
+0.15 0.15 0.15 rg BT /F2 9 Tf 55 805 Td (CSBB 301) Tj ET
+0.15 0.15 0.15 rg BT /F2 9 Tf 450 805 Td (Computer Networks) Tj ET
+0.5 G 0.5 w 55 795 m 540 795 l S
+0 0 0 rg BT /F2 12 Tf 55 766 Td (4. CONFIGURATION AND PROCEDURE) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 745 Td (1. Build and address the three-router topology and verify directly connected links. 2. For) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 730 Td (the RIP trial, configure version 2, disable auto-summary where supported, and advertise each) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 715 Td (connected classful network appropriately. 3. Inspect show ip route and test between LANs. 4.) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 700 Td (In a separate copy, configure OSPF process 1, router IDs, and area 0 network statements for) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 685 Td (each link and LAN. 5. Inspect OSPF neighbors/routes. 6. Disable one transit link and observe) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 670 Td (reconvergence.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 649 Td (Configuration discipline) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 628 Td (Apply settings in dependency order: build links, configure interface state, assign) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 613 Td (addresses, configure services or routes, and then configure clients. Save a known-good copy) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 598 Td (before changing parameters. Use the device command prompt or configuration panel appropriate) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 583 Td (to the selected Packet Tracer model.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 562 Td (Example command pattern) Tj ET
+0.15 0.15 0.15 rg BT /F2 9 Tf 55 541 Td (enable  |  configure terminal  |  interface <port>  |  no shutdown) Tj ET
+0.15 0.15 0.15 rg BT /F2 9 Tf 55 520 Td (show ip interface brief  |  show ip route  |  ping <destination>) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 499 Td (The commands above are generic IOS patterns. Use only commands supported by the selected) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 484 Td (device. Replace placeholders with the topology values; do not paste a command blindly across) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 469 Td (device types.) Tj ET
+0.5 G 0.5 w 55 55 m 540 55 l S
+0 0 0 rg BT /F2 10 Tf 135 32 Td (Department of Computer Science and Engineering) Tj ET
+0 0 0 rg BT /F1 9 Tf 460 32 Td (Page 4 of 6) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 2387 >>
+stream
+0.15 0.15 0.15 rg BT /F2 9 Tf 55 805 Td (CSBB 301) Tj ET
+0.15 0.15 0.15 rg BT /F2 9 Tf 450 805 Td (Computer Networks) Tj ET
+0.5 G 0.5 w 55 795 m 540 795 l S
+0 0 0 rg BT /F2 12 Tf 55 766 Td (5. VERIFICATION AND TROUBLESHOOTING) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 745 Td (Remote LAN routes should be learned dynamically when protocol configuration and interfaces) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 730 Td (are correct. Record route codes, next hops, and convergence behavior observed in the) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 715 Td (simulator. Never infer timing beyond the measured run.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 694 Td (Verification sequence) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 673 Td (Check the physical or simulated link first, then interface state, local addressing, subnet) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 658 Td (membership, gateway reachability, routing or service configuration, and finally the end-to-) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 643 Td (end application exchange. Use more than one independent check when possible: for example,) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 628 Td (compare a host configuration view with the corresponding router or server table.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 607 Td (Fault isolation) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 586 Td (If communication fails, verify cabling and port selection, confirm interfaces are enabled,) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 571 Td (check for duplicate or mistyped addresses, compare subnet masks, confirm gateway and DNS) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 556 Td (options, inspect routes and service state, then repeat the test. Change one variable at a) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 541 Td (time so that the cause of a change remains clear.) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 520 Td (A successful simulated exchange demonstrates behavior within the model and configuration) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 505 Td (used. It does not establish physical cable quality, real-world throughput, or Internet) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 490 Td (reachability unless those are explicitly measured in a real environment.) Tj ET
+0.5 G 0.5 w 55 55 m 540 55 l S
+0 0 0 rg BT /F2 10 Tf 135 32 Td (Department of Computer Science and Engineering) Tj ET
+0 0 0 rg BT /F1 9 Tf 460 32 Td (Page 5 of 6) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 2304 >>
+stream
+0.15 0.15 0.15 rg BT /F2 9 Tf 55 805 Td (CSBB 301) Tj ET
+0.15 0.15 0.15 rg BT /F2 9 Tf 450 805 Td (Computer Networks) Tj ET
+0.5 G 0.5 w 55 795 m 540 795 l S
+0 0 0 rg BT /F2 12 Tf 55 766 Td (6. DISCUSSION, PRECAUTIONS AND CONCLUSION) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 745 Td (Precautions: Use distinct subnets on each link. Avoid mixing trial configurations in one) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 730 Td (run. Packet Tracer IOS command support varies by model; adapt syntax and document the) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 715 Td (version.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 694 Td (Applications and relevance) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 673 Td (The ideas in routing protocol simulation apply to campus, enterprise, and home networks.) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 658 Td (Understanding the control and data flow helps administrators plan address space, reduce) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 643 Td (configuration errors, and locate faults without changing unrelated parts of a network.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 622 Td (Limitations) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 601 Td (Simulation abstracts hardware behavior and may not implement every command or protocol) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 586 Td (feature. Results depend on device model, software version, topology, and settings. Record) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 571 Td (those details when preparing a formal submission and avoid claiming measurements that were) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 556 Td (not performed.) Tj ET
+0 0 0 rg BT /F2 12 Tf 55 535 Td (Conclusion) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 514 Td (This report presents the aim, theory, design, procedure, and verification approach for) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 499 Td (routing protocol simulation. The experiment is complete when the topology is configured,) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 484 Td (expected behavior is checked, and the final project is saved with clear labels and) Tj ET
+0.08 0.08 0.08 rg BT /F1 10.5 Tf 55 469 Td (reproducible settings.) Tj ET
+0.5 G 0.5 w 55 55 m 540 55 l S
+0 0 0 rg BT /F2 10 Tf 135 32 Td (Department of Computer Science and Engineering) Tj ET
+0 0 0 rg BT /F1 9 Tf 460 32 Td (Page 6 of 6) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000149 00000 n 
+0000000221 00000 n 
+0000000292 00000 n 
+0000000365 00000 n 
+0000002456 00000 n 
+0000002602 00000 n 
+0000005347 00000 n 
+0000005493 00000 n 
+0000007789 00000 n 
+0000007937 00000 n 
+0000010384 00000 n 
+0000010532 00000 n 
+0000012972 00000 n 
+0000013120 00000 n 
+0000015477 00000 n 
+trailer
+<< /Size 18 /Root 1 0 R >>
+startxref
+15625
+%%EOF
